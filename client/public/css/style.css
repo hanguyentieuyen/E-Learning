@@ -36,7 +36,10 @@ h2{
 .bg-violet{
     background-color: #7846FA;
 }
-
+a{
+    text-decoration: none;
+    color:#0c1122;
+}
 .wrapper{
     max-width: 100%;
     width: 100%;
@@ -45,6 +48,10 @@ h2{
 }
 .navbar{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
 }
 .navbar-list{
     display: flex;
@@ -55,6 +62,7 @@ h2{
 }
 .navbar-list  li a{
     color: #1F1F39;
+    font-weight: 500;
 }
 
 .intro-wrapper{
@@ -115,7 +123,7 @@ h2{
 .service-desc{
     font-weight: 600;
     font-size: 16px;
-    padding-left: 10pxs;
+    padding-left: 10px;
 }
 
 .feature-text{
