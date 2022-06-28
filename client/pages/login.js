@@ -1,8 +1,12 @@
+import TopNav from "../components/TopNav";
+import Footer from "../components/Footer";
+import Signin from '../components/Signin';
 const Login = () => {
     return(
         <>
-            <h1 className="text-center">Login</h1>
-            <p>login page</p>
+            <TopNav/>
+            <Signin/>
+            <Footer/>
         </>
     )
 }

@@ -17,7 +17,7 @@ import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 const Footer = () => {
     return(
        <>
-        <div className="wrapper">
+        <div className="wrapper footer">
             <Container maxWidth="xl">
                 <div className="footer-content">
                     <div className="footer-info">
