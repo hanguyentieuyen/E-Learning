@@ -1,7 +1,7 @@
 import Sidebar from './Sidebar';
 import MainContent from './MainContent';
 import { useState } from 'react';
-
+import {ThemeProvider, createTheme} from "@mui/material/styles";
 function LayoutSidebar() {
   const [collapsed, setCollapsed] = useState(false);
   const [toggled, setToggled] = useState(false);
@@ -15,7 +15,13 @@ function LayoutSidebar() {
     setToggled(value);
   };
 
+  const darkTheme = createTheme({
+    palette: {
+        mode: 'dark',
+    }
+  })
   return (
+    <ThemeProvider theme={darkTheme}>
     <div className="content-layout">
       <Sidebar
         collapsed={collapsed}
@@ -24,13 +30,13 @@ function LayoutSidebar() {
         handleCollapsedChange={handleCollapsedChange}
       />
       <MainContent
-        
         toggled={toggled}
         collapsed={collapsed}
         handleToggleSidebar={handleToggleSidebar}
         
       />
     </div>
+    </ThemeProvider>
   );
 }
 

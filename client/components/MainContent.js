@@ -1,11 +1,13 @@
 import React from 'react';
-
-
+import MainNav from "../components/MainNav"
+import OverviewStudent from "../components/OverviewStudent";
+import Community from "../components/Community";
+import RecommendCourse from "../components/RecommendCourse"
 import { FaHeart, FaBars } from 'react-icons/fa';
 
 
 const Main = ({
-  collapsed,
+
   handleToggleSidebar,
   
 }) => {
@@ -15,15 +17,16 @@ const Main = ({
       <div className="btn-toggle" onClick={() => handleToggleSidebar(true)}>
         <FaBars />
       </div>
-      <header>
-        <h1>
-          {/* <img width={80} src={reactLogo} alt="react logo" /> {intl.formatMessage({ id: 'title' })} */}
-        </h1>
-      </header>
-      
-      <footer>
-       <p>HaNguyenTieuYen</p>
-      </footer>
+      <MainNav/>
+      <div className="row">
+        <div className="overview col-lg-9 col-md-7">
+          <OverviewStudent/>
+          <RecommendCourse/>
+        </div>
+        <div className="community col-lg-3 col-md-5">
+          <Community/>
+        </div>
+      </div>
     </main>
   );
 };

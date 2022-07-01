@@ -9,6 +9,9 @@ import {
         FaUserCog,
         } 
         from "react-icons/fa";
+
+        
+
 const Sidebar = ({collapsed, toggled, handleToggleSidebar,handleCollapsedChange })=>{
     return(
         <div className="content-height">
@@ -23,7 +26,7 @@ const Sidebar = ({collapsed, toggled, handleToggleSidebar,handleCollapsedChange 
                     style={{
                         padding: '24px',
                         textTransform: 'uppercase',
-                        fontWeight: 'bold',
+                        fontWeight: 'bold', 
                         fontSize: 14,
                         letterSpacing: '1px',
                         overflow: 'hidden',
@@ -36,14 +39,16 @@ const Sidebar = ({collapsed, toggled, handleToggleSidebar,handleCollapsedChange 
             </SidebarHeader>
             <SidebarContent>
                 <Menu iconShape="circle">
+                    <MenuItem icon={<FaGem />}>Overview</MenuItem>
                     <MenuItem icon={<FaGem />}>Dashboard</MenuItem>
-                    <SubMenu title="Account" icon={<FaUserCog />}></SubMenu>
-                    <SubMenu title="User" icon={<FaHeart />}>
-                        <MenuItem>Component 1</MenuItem>
+                    <SubMenu title="Chat" icon={<FaUserCog />}></SubMenu>
+                    <SubMenu title="Courses" icon={<FaHeart />}>
+                        <MenuItem>Resources</MenuItem>
                         <MenuItem>Component 2</MenuItem>
                     </SubMenu>
-                    <SubMenu title="Content" icon={<FaGem />}>
+                    <SubMenu title="Grade" icon={<FaGem />}>
                     </SubMenu>
+                    <MenuItem icon={<FaGem />}>Profile</MenuItem>
                     <SubMenu title="Setting" icon={<FaSellcast />}>
                     </SubMenu>
                 </Menu>
@@ -62,7 +67,7 @@ const Sidebar = ({collapsed, toggled, handleToggleSidebar,handleCollapsedChange 
                     />
                     
                 </div>
-                This is footer
+                
             </SidebarFooter>
             </ProSidebar>
         </div>

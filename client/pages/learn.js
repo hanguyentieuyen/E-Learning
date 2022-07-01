@@ -1,10 +1,11 @@
-import Sidebar from "../components/Sidebar";
+
 import LayoutSidebar from "../components/LayoutSidebar";
 const Learn = () => {
     return (
-        <>
+        <div className="wrapper">
             <LayoutSidebar/>
-        </>
+            
+        </div>
     )
 }
 
