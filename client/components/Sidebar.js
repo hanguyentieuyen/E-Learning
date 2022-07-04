@@ -40,12 +40,12 @@ const Sidebar = ({collapsed, toggled, handleToggleSidebar,handleCollapsedChange 
             <SidebarContent>
                 <Menu iconShape="circle">
                     <MenuItem icon={<FaGem />}>Overview</MenuItem>
-                    <MenuItem icon={<FaGem />}>Dashboard</MenuItem>
                     <SubMenu title="Chat" icon={<FaUserCog />}></SubMenu>
                     <SubMenu title="Courses" icon={<FaHeart />}>
                         <MenuItem>Resources</MenuItem>
                         <MenuItem>Component 2</MenuItem>
                     </SubMenu>
+                    <MenuItem icon={<FaGem />}>Schedule</MenuItem>
                     <SubMenu title="Grade" icon={<FaGem />}>
                     </SubMenu>
                     <MenuItem icon={<FaGem />}>Profile</MenuItem>

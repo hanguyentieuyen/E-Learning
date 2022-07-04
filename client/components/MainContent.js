@@ -2,7 +2,9 @@ import React from 'react';
 import MainNav from "../components/MainNav"
 import OverviewStudent from "../components/OverviewStudent";
 import Community from "../components/Community";
-import RecommendCourse from "../components/RecommendCourse"
+import TakingCourse from "../components/TakingCourse";
+import RecommendCourse from "../components/RecommendCourse";
+import UpcommingClass from "../components/UpcommingClass";
 import { FaHeart, FaBars } from 'react-icons/fa';
 
 
@@ -14,18 +16,25 @@ const Main = ({
 
   return (
     <main>
-      <div className="btn-toggle" onClick={() => handleToggleSidebar(true)}>
-        <FaBars />
+      <div>
+        <div className="btn-toggle" onClick={() => handleToggleSidebar(true)}>
+          <FaBars />
+        </div>
+      
       </div>
       <MainNav/>
-      <div className="row">
-        <div className="overview col-lg-9 col-md-7">
+      <div className="row mb-4">
+        <div className="col-lg-9 col-md-7">
           <OverviewStudent/>
-          <RecommendCourse/>
+          <TakingCourse/>
         </div>
         <div className="community col-lg-3 col-md-5">
           <Community/>
         </div>
+      </div>
+      <div className="row">
+        <RecommendCourse/>
+        <UpcommingClass/>
       </div>
     </main>
   );

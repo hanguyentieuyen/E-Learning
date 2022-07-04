@@ -4,7 +4,7 @@ import {FaGem} from "react-icons/fa";
 const OverviewCard = (props) => {
     return(
         <>
-            <div className="overviewcard col">
+            <div className="overviewcard">
                 <div className="overviewcard-icon">  
                     <FaGem/>
                 </div>
