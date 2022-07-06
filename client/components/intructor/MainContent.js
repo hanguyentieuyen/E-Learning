@@ -1,12 +1,7 @@
 import React from 'react';
-import MainNav from "../components/MainNav"
-import OverviewStudent from "../components/OverviewStudent";
-import Community from "../components/Community";
-import TakingCourse from "../components/TakingCourse";
-import RecommendCourse from "../components/RecommendCourse";
-import UpcommingClass from "../components/UpcommingClass";
+import MainNav from './MainNav';
+import Overview from './Overview';
 import { FaHeart, FaBars } from 'react-icons/fa';
-
 
 const Main = ({
 
@@ -25,16 +20,16 @@ const Main = ({
       <MainNav/>
       <div className="row mb-4">
         <div className="col-lg-9 col-md-12">
-          <OverviewStudent/>
-          <TakingCourse/>
+          <Overview/>
+          {/* <TakingCourse/> */}
         </div>
         <div className="community col-lg-3 col-md-12">
-          <Community/>
+          {/* <Community/> */}
         </div>
       </div>
       <div className="row">
-        <RecommendCourse/>
-        <UpcommingClass/>
+        {/* <RecommendCourse/>
+        <UpcommingClass/> */}
       </div>
     </main>
   );

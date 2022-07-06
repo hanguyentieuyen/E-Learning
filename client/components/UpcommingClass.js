@@ -28,6 +28,15 @@ const UpcomingClass = () => {
                             <span>15 May</span>
                         </div>
                     </div>
+                    <div className="upcoming-class-card">
+                        <div className="upcoming-class-img">
+                            <Image width="60px" height="60px" src ={Slack}/>
+                        </div>
+                        <div className="upcoming-class-text">
+                            <h6 className="upcoming-class-name">English Language</h6>
+                            <span>15 May</span>
+                        </div>
+                    </div>
                     
                 </div>
                 <button className="btn btn-seeall">See All Upcomming Class</button>

@@ -1,6 +1,6 @@
 
 import LayoutSidebar from "../components/LayoutSidebar";
-const Learn = () => {
+const Student = () => {
     return (
         <div className="wrapper">
             <LayoutSidebar/>
@@ -9,4 +9,4 @@ const Learn = () => {
     )
 }
 
-export default Learn;
+export default Student;
