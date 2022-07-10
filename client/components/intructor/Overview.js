@@ -1,4 +1,4 @@
-import OverviewCard from "./OverviewCard";
+import OverviewCard from "../OverviewCard";
 
 const OverviewIntructor = () => {
     return(
