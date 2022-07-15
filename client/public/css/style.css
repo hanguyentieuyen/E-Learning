@@ -765,6 +765,7 @@ main .btn-toggle {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 /*********Transactions**********/
+.chart-barstacked-wrapper,
 .chart-line-wrapper,
 .worldmap-wrapper,
 .chart-doughnut-wrapper,
@@ -843,6 +844,63 @@ main .btn-toggle {
   font-weight: 300;
   color: #797474;
 }
+.table-student-wrapper {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+.table-row-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.table-row-student {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
+/*******************************************/
+.Card-process {
+  width: 300px !important;
+  border-radius: 15px;
+  box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  margin-left: 30px;
+  background-color: white;
+}
+.recommend-process-cards {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
+.recommend-process-card {
+  margin-left: 10px;
+}
+.process-course-name {
+  margin: 0.5rem 0 0.5rem 0;
+}
+.recommend-process-card-content {
+  display: flex;
+  align-items: center;
+}
+.process-course-unit {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.process-course-nameuser {
+  margin-left: 15px;
+}
+.course-progress {
+  display: flex;
+  justify-content: space-between;
+}
+#file {
+  height: 25px;
+  width: 200px;
+}
+
 @media (max-width: 992px) {
   .recommend-course-cards {
     grid-template-columns: auto auto;

@@ -41,7 +41,7 @@ const Sidebar = ({
               whiteSpace: "nowrap",
             }}
           >
-            Header
+            E-Learning
           </div>
         </SidebarHeader>
         <SidebarContent>

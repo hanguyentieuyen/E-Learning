@@ -1,12 +1,12 @@
-
 import Darkmode from "../components/Darkmode";
-const Test= () => {
-    return (
-        <div className="wrapper">
-            <Darkmode/>
-            
-        </div>
-    )
-}
+import ProcessCourse from "../components/user/ProcessCourse";
+const Test = () => {
+  return (
+    <div className="wrapper">
+      <Darkmode />
+      <ProcessCourse />
+    </div>
+  );
+};
 
 export default Test;

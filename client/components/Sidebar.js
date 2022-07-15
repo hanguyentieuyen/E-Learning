@@ -41,7 +41,7 @@ const Sidebar = ({
               whiteSpace: "nowrap",
             }}
           >
-            Header
+            E-Learning
           </div>
         </SidebarHeader>
         <SidebarContent>
@@ -55,7 +55,7 @@ const Sidebar = ({
               <MenuItem>Component 2</MenuItem>
             </SubMenu>
             <MenuItem icon={<FaGem />}>Schedule</MenuItem>
-            <SubMenu title="Grade" icon={<FaGem />}></SubMenu>
+
             <Link href="/profile">
               <MenuItem icon={<FaGem />}>Profile</MenuItem>
             </Link>
