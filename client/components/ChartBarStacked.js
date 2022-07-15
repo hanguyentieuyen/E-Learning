@@ -2,12 +2,12 @@ import { Bar } from "react-chartjs-2";
 import { Chart as ChartJS } from "chart.js/auto";
 import { Chart } from "react-chartjs-2";
 const labels = [
-  "January",
-  "February",
-  "March",
-  "April",
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
   "May",
-  "June",
+  "Jun",
   "Jul",
   "Sep",
   "Oct",
@@ -18,13 +18,6 @@ const labels = [
 const data = {
   labels: labels,
   datasets: [
-    {
-      label: "First dataset",
-      backgroundColor: "rgb(255, 99, 132)",
-      borderColor: "rgb(255, 99, 132)",
-      data: [0, 10, 5, 2, 20, 30, 45, 25, 10, 5, 8],
-      borderRadius: 15,
-    },
     {
       label: "Second dataset",
       backgroundColor: "#00aeff",

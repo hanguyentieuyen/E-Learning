@@ -18,7 +18,7 @@ const Main = ({ handleToggleSidebar }) => {
         </div>
       </div>
       <MainNav />
-      <div className="row mb-4">
+      <div className="row mb-2">
         <div className="col-lg-12 col-md-12">
           <OverviewIntructor />
         </div>
@@ -31,7 +31,7 @@ const Main = ({ handleToggleSidebar }) => {
           </div>
         </div>
       </div>
-      <div className="row mt-4">
+      <div className="row mt-2">
         <div className="col-lg-5">
           <Transaction />
         </div>

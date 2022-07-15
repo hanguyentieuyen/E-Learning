@@ -1,11 +1,11 @@
 import React from "react";
 import MainNav from "../../components/MainNav";
-import ChartBarStacked from "../ChartBarStacked";
-import ChartDoughnut from "../ChartDoughnut";
-import TableStudentList from "./TableStudentList";
+import ChartLine from "../../components/ChartLine";
+import PaymentMethod from "./PaymentMethod";
+import TableTransaction from "./TableTransaction";
 import { FaBars } from "react-icons/fa";
 
-const LayoutStudents = ({ handleToggleSidebar }) => {
+const LayoutTransaction = ({ handleToggleSidebar }) => {
   return (
     <div className="wrapper">
       <main>
@@ -15,18 +15,18 @@ const LayoutStudents = ({ handleToggleSidebar }) => {
           </div>
         </div>
 
-        <MainNav title="Student" />
+        <MainNav title="Transaction" />
         <div className="row">
-          <div className="col-9">
-            <ChartBarStacked />
+          <div className="col-8">
+            <ChartLine />
           </div>
-          <div className="col-3">
-            <ChartDoughnut />
+          <div className="col-4">
+            <PaymentMethod />
           </div>
         </div>
         <div className="row">
           <div className="col-12">
-            <TableStudentList />
+            <TableTransaction />
           </div>
         </div>
       </main>
@@ -34,4 +34,4 @@ const LayoutStudents = ({ handleToggleSidebar }) => {
   );
 };
 
-export default LayoutStudents;
+export default LayoutTransaction;

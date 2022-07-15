@@ -11,7 +11,17 @@ import {
 import Switch from "react-switch";
 import Link from "next/link";
 import "react-pro-sidebar/dist/css/styles.css";
-import { FaGem, FaHeart, FaSellcast, FaUserCog } from "react-icons/fa";
+import {
+  FaGem,
+  FaUserGraduate,
+  FaUserCog,
+  FaMoneyCheckAlt,
+  FaBook,
+  FaCommentDots,
+  FaVideo,
+  FaCalendarDay,
+  FaBorderAll,
+} from "react-icons/fa";
 
 const Sidebar = ({
   collapsed,
@@ -46,17 +56,23 @@ const Sidebar = ({
         </SidebarHeader>
         <SidebarContent>
           <Menu iconShape="circle">
-            <MenuItem icon={<FaGem />}>Overview</MenuItem>
-            <SubMenu title="Student" icon={<FaUserCog />}></SubMenu>
-            <SubMenu title="Courses" icon={<FaHeart />}>
+            <Link href="/intructor-overview">
+              <MenuItem icon={<FaBorderAll />}>Overview</MenuItem>
+            </Link>
+            <Link href="/studentlist">
+              <SubMenu title="Student" icon={<FaUserGraduate />}></SubMenu>
+            </Link>
+            <SubMenu title="Courses" icon={<FaBook />}>
               <MenuItem></MenuItem>
             </SubMenu>
-            <MenuItem icon={<FaGem />}>Transaction</MenuItem>
-            <MenuItem icon={<FaGem />}>Chat</MenuItem>
-            <MenuItem icon={<FaGem />}>Schedule</MenuItem>
-            <SubMenu title="Live Class" icon={<FaGem />}></SubMenu>
+            <Link href="/transaction">
+              <MenuItem icon={<FaMoneyCheckAlt />}>Transaction</MenuItem>
+            </Link>
+            <MenuItem icon={<FaCommentDots />}>Chat</MenuItem>
+            <MenuItem icon={<FaCalendarDay />}>Schedule</MenuItem>
+            <SubMenu title="Live Class" icon={<FaVideo />}></SubMenu>
             <Link href="/profile">
-              <SubMenu title="Profile" icon={<FaSellcast />}></SubMenu>
+              <SubMenu title="Profile" icon={<FaUserCog />}></SubMenu>
             </Link>
           </Menu>
         </SidebarContent>

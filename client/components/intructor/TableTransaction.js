@@ -6,11 +6,8 @@ const TableStudentList = () => {
     <div className="table-student-wrapper card">
       <div className="card-header">
         <div className="table-student-sort">
-          <span>Student List</span>
-          <select
-            class="form-select form-select-sm table-student-select"
-            aria-label="Default select example"
-          >
+          <span>Recent Transaction</span>
+          <select class="form-select form-select-sm table-student-select">
             <option selected>Sort by</option>
             <option value="1">All Students</option>
             <option value="2">Two</option>
@@ -23,10 +20,11 @@ const TableStudentList = () => {
           <thead>
             <tr>
               <th>Student</th>
-              <th>Student ID</th>
-              <th>Course Name</th>
-              <th>Enrolled Date</th>
-              <th>Status</th>
+              <th>Course Code</th>
+              <th>Amount</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Payment Methods</th>
               <th></th>
             </tr>
           </thead>
@@ -36,49 +34,11 @@ const TableStudentList = () => {
                 <Image src={Ava4} width="50" height="50" />
                 <span>John Doe</span>
               </td>
-              <td>#54350</td>
-              <td>App Design Course</td>
+              <td>#354358</td>
+              <td>$120</td>
               <td>12 July,2022</td>
-              <td>Complete</td>
-              <td>
-                <BsThreeDots />
-              </td>
-            </tr>
-            <tr className="table-row-student">
-              <td className="table-row-item">
-                <Image src={Ava4} width="50" height="50" />
-                <span>John Doe</span>
-              </td>
-              <td>#54350</td>
-              <td>App Design Course</td>
-              <td>12 July,2022</td>
-              <td>Complete</td>
-              <td>
-                <BsThreeDots />
-              </td>
-            </tr>
-            <tr className="table-row-student">
-              <td className="table-row-item">
-                <Image src={Ava4} width="50" height="50" />
-                <span>John Doe</span>
-              </td>
-              <td>#54350</td>
-              <td>App Design Course</td>
-              <td>12 July,2022</td>
-              <td>Complete</td>
-              <td>
-                <BsThreeDots />
-              </td>
-            </tr>
-            <tr className="table-row-student">
-              <td className="table-row-item">
-                <Image src={Ava4} width="50" height="50" />
-                <span>John Doe</span>
-              </td>
-              <td>#54350</td>
-              <td>App Design Course</td>
-              <td>12 July,2022</td>
-              <td>Complete</td>
+              <td>5:20 pm</td>
+              <td>Visa</td>
               <td>
                 <BsThreeDots />
               </td>

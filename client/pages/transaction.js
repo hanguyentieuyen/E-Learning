@@ -1,10 +1,10 @@
 import { useState } from "react";
 import Sidebar from "../components/intructor/Sidebar";
-import LayoutStudents from "../components/intructor/LayoutStudents";
+import LayoutTransaction from "../components/intructor/LayoutTransaction";
 
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
-const StudentList = () => {
+const Transaction = () => {
   const [collapsed, setCollapsed] = useState(false);
   const [toggled, setToggled] = useState(false);
 
@@ -30,7 +30,7 @@ const StudentList = () => {
           handleToggleSidebar={handleToggleSidebar}
           handleCollapsedChange={handleCollapsedChange}
         />
-        <LayoutStudents
+        <LayoutTransaction
           toggled={toggled}
           collapsed={collapsed}
           handleToggleSidebar={handleToggleSidebar}
@@ -40,4 +40,4 @@ const StudentList = () => {
   );
 };
 
-export default StudentList;
+export default Transaction;

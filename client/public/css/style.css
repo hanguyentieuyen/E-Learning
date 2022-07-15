@@ -84,10 +84,17 @@ a {
   display: flex;
   justify-content: center;
 }
+.chart-line-wrapper .card-body {
+  max-height: 400px;
+}
 .chart-line-wrapper .card-body canvas {
-  /* max-height: 400px !important;
-  max-width: 1000px !important;
-  margin: 0 auto; */
+  max-height: 100%;
+}
+.chart-barstacked-wrapper .card-body {
+  max-height: 400px;
+}
+.chart-barstacked-wrapper .card-body canvas {
+  max-height: 100%;
 }
 .world-map {
   fill: #7846fa;
@@ -847,18 +854,37 @@ main .btn-toggle {
 .table-student-wrapper {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
-  padding: 10px 20px;
+  margin-top: 30px;
 }
 .table-row-item {
   display: flex;
   align-items: center;
   width: 100%;
 }
-.table-row-student {
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  border-radius: 15px;
+.table-student-sort {
+  max-width: 400px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
-/*******************************************/
+.table-student-select {
+  width: 50%;
+  margin-left: 20px;
+}
+.table-row-student {
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 15px; */
+}
+/****************** Payment Methods*********************/
+.table-payment-img {
+  display: flex;
+  align-items: center;
+}
+.table-payment-item {
+  padding: 23px 0 !important;
+}
+
+/*****************************************/
 .Card-process {
   width: 300px !important;
   border-radius: 15px;
