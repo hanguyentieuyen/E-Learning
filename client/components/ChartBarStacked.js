@@ -19,17 +19,17 @@ const data = {
   labels: labels,
   datasets: [
     {
-      label: "Second dataset",
+      label: "Enrolled",
       backgroundColor: "#00aeff",
       borderColor: "rgb(255, 99, 132)",
-      data: [0, 10, 5, 2, 20, 30, 45, 25, 10, 5, 8],
+      data: [3, 10, 5, 2, 20, 30, 45, 25, 10, 5, 8],
       borderRadius: 15,
     },
     {
-      label: "Third dataset",
+      label: "Left",
       backgroundColor: "orange",
       borderColor: "rgb(255, 99, 132)",
-      data: [0, 10, 5, 2, 20, 30, 45, 25, 10, 5, 8],
+      data: [5, 10, 5, 2, 20, 30, 45, 25, 10, 5, 8],
       borderRadius: 15,
     },
   ],
@@ -56,7 +56,9 @@ const options = {
 const ChartBarStacked = () => {
   return (
     <div className="chart-barstacked-wrapper card" style={{ margin: "0 auto" }}>
-      <div className="chart-barstacked-header card-header">Rate</div>
+      <div className="chart-barstacked-header card-header">
+        Student Enrolled & Left
+      </div>
       <div className="card-body">
         <Bar data={data} options={options} />
       </div>
