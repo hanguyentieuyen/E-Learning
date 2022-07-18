@@ -13,7 +13,7 @@ const data = {
 };
 const ChartDoughnut = () => {
   return (
-    <div className="chart-doughnut-wrapper card" style={{ margin: "0 auto" }}>
+    <div className="chart-doughnut-wrapper card">
       <div className="card-header">Rate</div>
       <div className="card-body">
         <Doughnut data={data} />

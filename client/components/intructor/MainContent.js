@@ -2,8 +2,8 @@ import React from "react";
 import MainNav from "./MainNav";
 import OverviewIntructor from "./Overview";
 import TopCourse from "./TopCourse";
-import ChartLine from "../ChartLine";
-import ChartDoughnut from "../ChartDoughnut";
+import ChartLine from "./ChartLine";
+import ChartDoughnut from "./ChartDoughnut";
 import Calendar from "../Calendar";
 import Transaction from "../Transaction";
 import WorldMap from "../map/Map";
@@ -18,11 +18,11 @@ const Main = ({ handleToggleSidebar }) => {
         </div>
       </div>
       <MainNav />
-      <div className="row mb-2">
+      <div className="row">
         <div className="col-lg-12 col-md-12">
           <OverviewIntructor />
         </div>
-        <div className="intructor-row-2 row mt-4">
+        <div className="intructor-row-2 row ">
           <div className="col-lg-9">
             <ChartLine />
           </div>
@@ -31,14 +31,14 @@ const Main = ({ handleToggleSidebar }) => {
           </div>
         </div>
       </div>
-      <div className="row mt-2">
-        <div className="col-lg-5">
+      <div className="row mt-4">
+        <div className="col-lg-5 col-md-12">
           <Transaction />
         </div>
-        <div className="col-lg-4">
+        <div className="col-lg-4 col-md-6">
           <WorldMap />
         </div>
-        <div className="col-lg-3">
+        <div className="col-lg-3 col-md-6">
           <ChartDoughnut />
         </div>
       </div>

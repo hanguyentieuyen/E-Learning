@@ -1,6 +1,6 @@
 import React from "react";
 import MainNav from "../../components/MainNav";
-import ChartLine from "../../components/ChartLine";
+import ChartLine from "./ChartLine";
 import PaymentMethod from "./PaymentMethod";
 import TableTransaction from "./TableTransaction";
 import { FaBars } from "react-icons/fa";
@@ -16,15 +16,15 @@ const LayoutTransaction = ({ handleToggleSidebar }) => {
         </div>
 
         <MainNav title="Transaction" />
-        <div className="row">
-          <div className="col-8">
+        <div className="row mt-4">
+          <div className="col-lg-8 col-md-12">
             <ChartLine />
           </div>
-          <div className="col-4">
+          <div className="col-lg-4 col-md-12">
             <PaymentMethod />
           </div>
         </div>
-        <div className="row">
+        <div className="row mt-4">
           <div className="col-12">
             <TableTransaction />
           </div>

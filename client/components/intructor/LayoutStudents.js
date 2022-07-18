@@ -1,7 +1,7 @@
 import React from "react";
 import MainNav from "../../components/MainNav";
-import ChartBarStacked from "../ChartBarStacked";
-import ChartDoughnut from "../ChartDoughnut";
+import ChartBarStacked from "./ChartBarStacked";
+import ChartDoughnut from "./ChartDoughnut";
 import TableStudentList from "./TableStudentList";
 import { FaBars } from "react-icons/fa";
 
@@ -17,10 +17,10 @@ const LayoutStudents = ({ handleToggleSidebar }) => {
 
         <MainNav title="Student" />
         <div className="row">
-          <div className="col-9">
+          <div className="col-lg-9 col-md-12">
             <ChartBarStacked />
           </div>
-          <div className="col-3">
+          <div className="col-lg-3">
             <ChartDoughnut />
           </div>
         </div>
