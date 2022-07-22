@@ -17,10 +17,10 @@ const LayoutStudents = ({ handleToggleSidebar }) => {
 
         <MainNav title="Student" />
         <div className="row">
-          <div className="col-lg-9 col-md-12">
+          <div className=" col-lg-9 col-md-12">
             <ChartBarStacked />
           </div>
-          <div className="col-lg-3">
+          <div className=" col-lg-3">
             <ChartDoughnut />
           </div>
         </div>

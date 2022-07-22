@@ -17,11 +17,11 @@ const Main = ({ handleToggleSidebar }) => {
       </div>
       <MainNav title="Overview" />
       <div className="row mb-4">
-        <div className="col-lg-9 col-md-12">
+        <div className="col-xl-9 col-lg-12 col-md-12">
           <OverviewStudent />
           <TakingCourse />
         </div>
-        <div className="community col-lg-3 col-md-12">
+        <div className="community col-xl-3 col-lg-12 col-md-12">
           <Community />
         </div>
       </div>

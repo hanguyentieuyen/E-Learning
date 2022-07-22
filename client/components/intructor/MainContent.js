@@ -23,10 +23,10 @@ const Main = ({ handleToggleSidebar }) => {
           <OverviewIntructor />
         </div>
         <div className="intructor-row-2 row ">
-          <div className="col-lg-9">
+          <div className="col-xl-9 col-lg-12 col-md-12">
             <ChartLine />
           </div>
-          <div className="community col-lg-3 col-md-12">
+          <div className="community col-xl-3 col-lg-12 col-md-12">
             <TopCourse />
           </div>
         </div>

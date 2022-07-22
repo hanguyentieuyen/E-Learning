@@ -16,35 +16,37 @@ const TableStudentList = () => {
         </div>
       </div>
       <div className="card-body">
-        <table className="table table-borderless">
-          <thead>
-            <tr>
-              <th>Student</th>
-              <th>Course Code</th>
-              <th>Amount</th>
-              <th>Date</th>
-              <th>Time</th>
-              <th>Payment Methods</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="table-row-student">
-              <td className="table-row-item">
-                <Image src={Ava4} width="50" height="50" />
-                <span>John Doe</span>
-              </td>
-              <td>#354358</td>
-              <td>$120</td>
-              <td>12 July,2022</td>
-              <td>5:20 pm</td>
-              <td>Visa</td>
-              <td>
-                <BsThreeDots />
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div className="table-wrapper">
+          <table className="table table-borderless">
+            <thead>
+              <tr>
+                <th className="table-col">Student</th>
+                <th className="table-col">Course Code</th>
+                <th className="table-col">Amount</th>
+                <th className="table-col">Date</th>
+                <th className="table-col">Time</th>
+                <th className="table-col">Payment Methods</th>
+                <th className="table-col-fix"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="table-row-student">
+                <td className="table-row-item">
+                  <Image src={Ava4} width="50" height="50" />
+                  <span>John Doe</span>
+                </td>
+                <td>#354358</td>
+                <td>$120</td>
+                <td>12 July,2022</td>
+                <td>5:20 pm</td>
+                <td>Visa</td>
+                <td>
+                  <BsThreeDots />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <nav aria-label="Page navigation">
           <ul class="pagination justify-content-center">
             <li class="page-item">
