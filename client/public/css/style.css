@@ -937,13 +937,15 @@ main .btn-toggle {
 }
 /**************************************/
 .course-lesson {
-  width: 400px;
+  width: 300px;
   height: 100vh;
   background-color: pink;
   position: absolute;
   top: 0;
   left: 0;
 }
+
+/************************************/
 @media (max-width: 1024px) {
 }
 @media (max-width: 992px) {
